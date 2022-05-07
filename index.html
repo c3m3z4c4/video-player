@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="player">
+      <video id="video" poster="../assets//images/code-org.png" src="../assets/videos/what-most-schools-dont-teach.mp4" width="400px" aria-label="Video promo" title="Video Promo"></video>
+      <div class="player-overlay">
+        <h2 class="player-title">Why should I learn how to code?</h2>
+        <div class="player-actions"> 
+          <button id="bwd" class="button" aria-label="Retroceder 10 segs" title="Retroceder 10 segs"></button>
+          <button id="play" class="button" aria-label="Reproducir" title="Reproducir"></button>
+          <button id="pause" hidden class="button" aria-label="Pausa" title="Pausar"></button>
+          <button id="fwd" class="button" aria-label="Adelantar 10 segs" title="Adelantar 10 segs"></button>
+        </div>
+        <div class="player-progress">
+          <input type="range" min="0" value="0" step="1" id="progress">
+        </div>
+      </div>
+    </div> 
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
