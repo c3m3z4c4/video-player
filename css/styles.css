@@ -9,11 +9,13 @@ body {
 .wrapper{
     max-inline-size: 900px;
     margin: auto;
+
 }
 .player{
   margin-block-start: 100px;
   position: relative;
   /* border: 10px solid red; */
+ 
 }
 
 .player > video {
@@ -21,6 +23,7 @@ body {
   aspect-ratio: 16/9;
   vertical-align: middle;
   object-fit: cover;
+      border-radius: 20px;
 }
 
 .player-title{
